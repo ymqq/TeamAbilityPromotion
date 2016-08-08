@@ -1,6 +1,44 @@
 # 日常记录
 
 
+## 2016-08-08
+### Android（陈卿强、吴增乡、陈俊）
+
+#### 1、学习GitHub
+> 1、需要学会版本管理所有入门知识；
+> 2、建议入门教程：
+    http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000
+    http://www.runoob.com/git/git-tutorial.html
+
+注：统一使用的远程仓库（https://github.com/ymqq/TeamAbilityPromotion）
+
+#### 2、学习MarkDown文档编写规范
+> 1、学习MarkDown文档编写规范，然后再GitHub仓库中创建自己的学习笔记
+> 2、建议入门教程：
+    http://sspai.com/25137
+    http://www.jianshu.com/p/1e402922ee32/
+    http://www.appinn.com/markdown/
+
+
+### iOS（金胜利、林利冰、吴子剑）
+
+#### 1、学习GitHub
+> 1、需要学会版本管理所有入门知识；
+> 2、建议入门教程：
+    http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000
+    http://www.runoob.com/git/git-tutorial.html
+
+注：统一使用的远程仓库（https://github.com/ymqq/TeamAbilityPromotion）
+
+#### 2、学习MarkDown文档编写规范
+> 1、学习MarkDown文档编写规范，然后再GitHub仓库中创建自己的学习笔记
+> 2、建议入门教程：
+    http://sspai.com/25137
+    http://www.jianshu.com/p/1e402922ee32/
+    http://www.appinn.com/markdown/
+
+
+
 
 ## 2016-08-02
 ### 1、Android技术储备与基于易销售搭建新框架（陈卿强、吴增乡、陈俊）
