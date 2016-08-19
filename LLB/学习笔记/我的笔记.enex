@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE en-export SYSTEM "http://xml.evernote.com/pub/evernote-export3.dtd">
+<en-export export-date="20160815T082053Z" application="Evernote" version="Evernote Mac 6.8 (453749)">
+<note><title>Git基本命令学习</title><content><![CDATA[<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE en-note SYSTEM "http://xml.evernote.com/pub/enml2.dtd">
+<en-note>
+<div>1、安装Git—sudo apt-get install git</div>
+<div>2、创建版本库</div>
+<div>     1、创建空目录</div>
+<div>          mkdir llb</div>
+<div>          cd llb</div>
+<div>          pwd</div>
+<div>     2、初始化目录</div>
+<div>         git clone 连接地址</div>
+<div>          git init</div>
+<div>3、添加文件到版本库</div>
+<div>     git add xxx.txt</div>
+<div>     git commit - m “本次提交的说明&quot;</div>
+<div><br/></div>
+</en-note>
+]]></content><created>20160815T080930Z</created><updated>20160815T081850Z</updated><note-attributes><author>593275402@qq.com</author><source>desktop.mac</source><reminder-order>0</reminder-order></note-attributes></note>
+</en-export>
