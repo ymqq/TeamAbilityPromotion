@@ -65,9 +65,9 @@ Android官方培训课程中文版(v0.9.5): http://hukai.me/android-training-cou
 ### iOS（金胜利、林利冰、吴子剑）
 
 #### 1、学习GitHub
-> 1、需要学会版本管理所有入门知识；
+1.需要学会版本管理所有入门知识；
 
-> 2、建议入门教程：
+2.建议入门教程：
     http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000
     http://www.runoob.com/git/git-tutorial.html
 
