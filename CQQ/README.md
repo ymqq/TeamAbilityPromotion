@@ -119,10 +119,13 @@ Android 项目开发填坑记 - 使用 MultiDex 解决 64K 限制：http://likfe
 
 ### Mockito
 Mockito 简明教程：http://www.tuicool.com/articles/J7BFr2A
+
 Mockito官网：http://mockito.org/
+
 GitHub：https://github.com/mockito/mockito
 
 ### Android单元测试专题
+
 Android单元测试专题：http://chriszou.com/
 
 Android单元测试: 首先，从是什么开始：http://chriszou.com/2016/04/13/android-unit-testing-start-from-what.html
@@ -130,25 +133,40 @@ Android单元测试: 首先，从是什么开始：http://chriszou.com/2016/04/1
 Android单元测试（二）：再来谈谈为什么：http://chriszou.com/2016/04/16/android-unit-testing-about-why.html
 
 Android单元测试(三)：JUnit单元测试框架的使用：http://chriszou.com/2016/04/18/android-unit-testing-junit.html
+
 Android单元测试（四）：Mock以及Mockito的使用：http://chriszou.com/2016/04/29/android-unit-testing-mockito.html
+
 Android单元测试（五）：依赖注入，将mock方便的用起来：http://chriszou.com/2016/05/06/android-unit-testing-di.html
+
 Android单元测试（六）：使用dagger2来做依赖注入，以及在单元测试中的应用：http://chriszou.com/2016/05/10/android-unit-testing-di-dagger.html
+
 Android单元测试（七）：Robolectric，在JVM上调用安卓的类：http://chriszou.com/2016/06/05/robolectric-android-on-jvm.html
+
 关于安卓单元测试，你需要知道的一切：http://chriszou.com/2016/06/07/android-unit-testing-everything-you-need-to-know.html
+
 安卓单元测试(八)：Junit Rule的使用：http://chriszou.com/2016/07/09/junit-rule.html
+
 安卓单元测试（九）：使用Mockito Annotation快速创建Mock：http://chriszou.com/2016/07/16/mockito-annotation.html
+
 Android单元测试(十)：DaggerMock：The Power of Dagger2, The Ease of Mockito The Old Way：http://chriszou.com/2016/07/24/android-unit-testing-daggermock.html
+
 安卓单元测试(十一)：异步代码怎么测试：http://chriszou.com/2016/08/06/android-unit-testing-async.html
 
 
 ### 插播
-(MVP+RxJava+Retrofit)解耦+Mockito单元测试 经验分享：http://www.jianshu.com/p/cdfeb6c3d099#
-从源码一次彻底理解Android的消息机制：http://blog.csdn.net/ghost_programmer/article/details/52038201
- 一步步理解Android事件分发机制：http://blog.csdn.net/ghost_programmer/article/details/51985692
 
- MVP 模式简单易懂的介绍方式；http://kaedea.com/2015/10/11/android-mvp-pattern/
- RxJava快速入门：http://www.jianshu.com/p/6a6f7a4be38d
- 给 Android 开发者的 RxJava 详解：http://gank.io/post/560e15be2dca930e00da1083
+(MVP+RxJava+Retrofit)解耦+Mockito单元测试 经验分享：http://www.jianshu.com/p/cdfeb6c3d099#
+
+从源码一次彻底理解Android的消息机制：http://blog.csdn.net/ghost_programmer/article/details/52038201
+
+一步步理解Android事件分发机制：http://blog.csdn.net/ghost_programmer/article/details/51985692
+
+
+MVP 模式简单易懂的介绍方式；http://kaedea.com/2015/10/11/android-mvp-pattern/
+
+RxJava快速入门：http://www.jianshu.com/p/6a6f7a4be38d
+
+给 Android 开发者的 RxJava 详解：http://gank.io/post/560e15be2dca930e00da1083
 
 ## 2016-08-02
 

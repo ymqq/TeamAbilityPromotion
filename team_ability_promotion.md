@@ -22,25 +22,39 @@
     http://www.appinn.com/markdown/
 
 ### 3、Google MVP学习
+
 http://www.tuicool.com/search?kw=Android+Architecture+Blueprints+%E5%AD%A6%E4%B9%A0
+
 https://github.com/googlesamples/android-architecture
 
+
 Android官方MVP架构示例项目解析: http://www.open-open.com/lib/view/open1460535364435.html
+
 解读 Android 官方 MVP 项目单元测试: http://www.open-open.com/lib/view/open1461481438522.html
+
 如何设计MVP中的Presentation层: http://blog.chengdazhi.com/index.php/115
+
 选择恐惧症的福音！教你认清MVC，MVP和MVVM: http://www.open-open.com/lib/view/open1460587161628.html
+
 在Android应用中使用Clean架构: http://blog.chengdazhi.com/index.php/101
+
 http://blog.chengdazhi.com/
+
 一步一步实现Android的MVP框架: http://www.open-open.com/lib/view/open1470381075884.html
 
 
 引申iOS MVP设计开发学习
+
 基于面向协议MVP模式下的软件设计－(iOS篇): http://www.open-open.com/lib/view/open1450787713558.html
+
 iOS架构模式-揭秘MVC,MVP,MVVM和VIPER: http://www.open-open.com/lib/view/open1455716553714.html
+
 iOS 架构模式--解密 MVC，MVP，MVVM以及VIPER架构: http://www.open-open.com/lib/view/open1452219383245.html
 
 
+
 Android官方培训课程中文版(v0.9.5): http://hukai.me/android-training-course-in-chinese/index.html
+
 收集的Ando日的开源项目: http://www.open-open.com/lib/view/open1328063267889.html
 
 
