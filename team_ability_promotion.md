@@ -15,7 +15,7 @@
     
     http://www.runoob.com/git/git-tutorial.html
 
-注：统一使用的远程仓库（https://github.com/ymqq/TeamAbilityPromotion）
+> 注：统一使用的远程仓库（https://github.com/ymqq/TeamAbilityPromotion）
 
 #### 2、学习MarkDown文档编写规范
 * 1、学习MarkDown文档编写规范，然后再GitHub仓库中创建自己的学习笔记
@@ -78,7 +78,7 @@ Android官方培训课程中文版(v0.9.5): http://hukai.me/android-training-cou
 
     http://www.runoob.com/git/git-tutorial.html
 
-注：统一使用的远程仓库（https://github.com/ymqq/TeamAbilityPromotion）
+> 注：统一使用的远程仓库（https://github.com/ymqq/TeamAbilityPromotion）
 
 #### 2、学习MarkDown文档编写规范
 * 1、学习MarkDown文档编写规范，然后再GitHub仓库中创建自己的学习笔记
