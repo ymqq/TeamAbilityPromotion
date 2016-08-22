@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE en-export SYSTEM "http://xml.evernote.com/pub/evernote-export3.dtd">
+<en-export export-date="20160819T095557Z" application="Evernote" version="Evernote Mac 6.8 (453749)">
+<note><title>Git基本命令学习</title><content><![CDATA[<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE en-note SYSTEM "http://xml.evernote.com/pub/enml2.dtd">
+<en-note>
+<div>1、安装Git—sudo apt-get install git</div>
+<div>2、创建版本库</div>
+<div>     1、创建空目录</div>
+<div>          mkdir llb</div>
+<div>          cd llb</div>
+<div>          pwd</div>
+<div>     2、初始化目录</div>
+<div>         git clone 连接地址</div>
+<div>          git init</div>
+<div>3、添加文件到版本库</div>
+<div>     git add xxx.txt</div>
+<div>     git commit - m “本次提交的说明&quot;</div>
+<div>4、查看当前仓库更改状态</div>
+<div>     git status</div>
+<div>     git diff</div>
+<div>     git diff HEAD — xxx.xxx 查看工作区和版本库最新版本的区别</div>
+<div>5、版本回退</div>
+<div>     git log</div>
+<div>     git reflow 记录你的每一次命令</div>
+<div>     git reset —hard HEAD^</div>
+<div>     git reset —hard 3676767(这里是版本的版本号，写前几位就可以了)</div>
+<div><span style="color: rgb(102, 102, 102);">现在总结一下：</span></div>
+<div>
+<ul style="padding-left: 30px; font-style: normal; font-variant-ligatures: normal; font-variant-position: normal; font-variant-caps: normal; font-variant-numeric: normal; font-variant-alternates: normal; font-variant-east-asian: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+<li><code style="font-size: 12px; font-family: Consolas, monospace, serif; color: rgb(221, 0, 85); padding: 0px 4px; border: 1px solid rgb(221, 221, 221); border-radius: 3px; background: rgb(250, 250, 250);">HEAD</code><span style="color: rgb(102, 102, 102);">指向的版本就是当前版本，因此，Git允许我们在版本的历史之间穿梭，使用命令</span><code style="font-size: 12px; font-family: Consolas, monospace, serif; color: rgb(221, 0, 85); padding: 0px 4px; border: 1px solid rgb(221, 221, 221); border-radius: 3px; background: rgb(250, 250, 250);">git reset --hard commit_id</code><span style="color: rgb(102, 102, 102);">。</span></li>
+<li><span style="color: rgb(102, 102, 102);">穿梭前，用</span><code style="font-size: 12px; font-family: Consolas, monospace, serif; color: rgb(221, 0, 85); padding: 0px 4px; border: 1px solid rgb(221, 221, 221); border-radius: 3px; background: rgb(250, 250, 250);">git log</code><span style="color: rgb(102, 102, 102);">可以查看提交历史，以便确定要回退到哪个版本。</span></li>
+<li><span style="color: rgb(102, 102, 102);">要重返未来，用</span><code style="font-size: 12px; font-family: Consolas, monospace, serif; color: rgb(221, 0, 85); padding: 0px 4px; border: 1px solid rgb(221, 221, 221); border-radius: 3px; background: rgb(250, 250, 250);">git reflog</code><span style="color: rgb(102, 102, 102);">查看命令历史，以便确定要回到未来的哪个版本。</span></li>
+</ul>
+</div>
+<div>6、丢弃文件修改内容</div>
+<div>     git checkout — xxx.xxx</div>
+<div>     git reset HEAD xxx.xxx</div>
+<div>7、删除文件</div>
+<div>     git rm xxx.xxx</div>
+<div>     git commit -m “xxx&quot;</div>
+<div>8、创建远程仓库</div>
+<div>     关联远程仓库 git remote add origin git@xxxxxxx</div>
+<div>     第一次推送master分支所有内容 git push -u origin master。<code style="font-size: 12px; font-family: Consolas, monospace, serif; color: rgb(221, 0, 85); white-space: nowrap; padding: 0px 4px; border: 1px solid rgb(221, 221, 221); border-radius: 3px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background: rgb(250, 250, 250);">-u</code><span style="color: rgb(102, 102, 102); font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: pre-wrap; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; float: none; background-color: rgb(255, 255, 255);">参数，Git不但会把本地的</span><code style="font-size: 12px; font-family: Consolas, monospace, serif; color: rgb(221, 0, 85); white-space: nowrap; padding: 0px 4px; border: 1px solid rgb(221, 221, 221); border-radius: 3px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background: rgb(250, 250, 250);">master</code><span style="color: rgb(102, 102, 102); font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: pre-wrap; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; float: none; background-color: rgb(255, 255, 255);">分支内容推送的远程新的</span><code style="font-size: 12px; font-family: Consolas, monospace, serif; color: rgb(221, 0, 85); white-space: nowrap; padding: 0px 4px; border: 1px solid rgb(221, 221, 221); border-radius: 3px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background: rgb(250, 250, 250);">master</code><span style="color: rgb(102, 102, 102); font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: pre-wrap; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; float: none; background-color: rgb(255, 255, 255);">分支，还会把本地的</span><code style="font-size: 12px; font-family: Consolas, monospace, serif; color: rgb(221, 0, 85); white-space: nowrap; padding: 0px 4px; border: 1px solid rgb(221, 221, 221); border-radius: 3px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background: rgb(250, 250, 250);">master</code><span style="color: rgb(102, 102, 102); font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: pre-wrap; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; float: none; background-color: rgb(255, 255, 255);">分支和远程的</span><code style="font-size: 12px; font-family: Consolas, monospace, serif; color: rgb(221, 0, 85); white-space: nowrap; padding: 0px 4px; border: 1px solid rgb(221, 221, 221); border-radius: 3px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background: rgb(250, 250, 250);">master</code><span style="color: rgb(102, 102, 102); font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; float: none; background-color: rgb(255, 255, 255);">分支关联起来，在以后的推送或者拉取时就可以简化命令</span></div>
+<div>     后续提交版本 git push origin master</div>
+<div>9、分支</div>
+<div>     <span style="color: rgb(102, 102, 102);">Git鼓励大量使用分支：</span></div>
+<div><span style="color: rgb(102, 102, 102);">     查看分支：</span><code style="font-size: 12px; font-family: Consolas, monospace, serif; color: rgb(221, 0, 85); padding: 0px 4px; border: 1px solid rgb(221, 221, 221); border-radius: 3px; background: rgb(250, 250, 250);">git branch</code></div>
+<div><span style="color: rgb(102, 102, 102);">     创建分支：</span><code style="font-size: 12px; font-family: Consolas, monospace, serif; color: rgb(221, 0, 85); padding: 0px 4px; border: 1px solid rgb(221, 221, 221); border-radius: 3px; background: rgb(250, 250, 250);">git branch &lt;name&gt;</code></div>
+<div><span style="color: rgb(102, 102, 102);">     切换分支：</span><code style="font-size: 12px; font-family: Consolas, monospace, serif; color: rgb(221, 0, 85); padding: 0px 4px; border: 1px solid rgb(221, 221, 221); border-radius: 3px; background: rgb(250, 250, 250);">git checkout &lt;name&gt;</code></div>
+<div><span style="color: rgb(102, 102, 102);">     创建+切换分支：</span><code style="font-size: 12px; font-family: Consolas, monospace, serif; color: rgb(221, 0, 85); padding: 0px 4px; border: 1px solid rgb(221, 221, 221); border-radius: 3px; background: rgb(250, 250, 250);">git checkout -b &lt;name&gt;</code></div>
+<div><span style="color: rgb(102, 102, 102);">     合并某分支到当前分支：</span><code style="font-size: 12px; font-family: Consolas, monospace, serif; color: rgb(221, 0, 85); padding: 0px 4px; border: 1px solid rgb(221, 221, 221); border-radius: 3px; background: rgb(250, 250, 250);">git merge &lt;name&gt;</code></div>
+<div><span style="color: rgb(102, 102, 102);">     删除分支：</span><code style="font-size: 12px; font-family: Consolas, monospace, serif; color: rgb(221, 0, 85); padding: 0px 4px; border: 1px solid rgb(221, 221, 221); border-radius: 3px; background: rgb(250, 250, 250);">git branch -d &lt;name&gt;</code></div>
+<div><span style="color: rgb(68, 68, 68);"><span style="font-size: 12px;"><code><span style="font-family: Consolas, monospace, serif;">   git merge --no-ff -m <span style="color: rgb(221, 17, 68);">&quot;merge with no-ff&quot;</span> dev不使用Fast forward模式。合并后分支记录还在</span></code></span></span></div>
+<div><span style="font-size: 12px;"><span style="font-family: Consolas, monospace, serif;"><span style="color: rgb(68, 68, 68);">10、修复bug分支</span></span></span></div>
+<div><span style="font-size: 12px;"><span style="font-family: Consolas, monospace, serif;"><span style="color: rgb(68, 68, 68);">     先把工作现场缓存起来 git stash</span></span></span></div>
+<div><span style="font-size: 12px;"><span style="font-family: Consolas, monospace, serif;"><span style="color: rgb(68, 68, 68);">     后面恢复现场 git stash pop</span></span></span></div>
+<div><span style="font-size: 12px;"><span style="font-family: Consolas, monospace, serif;"><span style="color: rgb(68, 68, 68);">11、多人协作</span></span></span></div>
+<div><span style="font-size: 12px;"><span style="font-family: Consolas, monospace, serif;"><span style="color: rgb(68, 68, 68);">  </span></span></span> <span style="color: rgb(102, 102, 102);">查看远程库信息，使用</span><code style="font-size: 12px; font-family: Consolas, monospace, serif; color: rgb(221, 0, 85); padding: 0px 4px; border: 1px solid rgb(221, 221, 221); border-radius: 3px; background: rgb(250, 250, 250);">git remote -v</code><span style="color: rgb(102, 102, 102);">；</span></div>
+<div><span style="color: rgb(102, 102, 102);">      本地新建的分支如果不推送到远程，对其他人就是不可见的；</span></div>
+<div><span style="color: rgb(102, 102, 102);">     从本地推送分支，使用</span><code style="font-size: 12px; font-family: Consolas, monospace, serif; color: rgb(221, 0, 85); padding: 0px 4px; border: 1px solid rgb(221, 221, 221); border-radius: 3px; background: rgb(250, 250, 250);">git push origin branch-name</code><span style="color: rgb(102, 102, 102);">，如果推送失败，先用</span><code style="font-size: 12px; font-family: Consolas, monospace, serif; color: rgb(221, 0, 85); padding: 0px 4px; border: 1px solid rgb(221, 221, 221); border-radius: 3px; background: rgb(250, 250, 250);">git pull</code><span style="color: rgb(102, 102, 102);">抓取远程的新提交；</span></div>
+<div><span style="color: rgb(102, 102, 102);">     在本地创建和远程分支对应的分支，使用</span><code style="font-size: 12px; font-family: Consolas, monospace, serif; color: rgb(221, 0, 85); padding: 0px 4px; border: 1px solid rgb(221, 221, 221); border-radius: 3px; background: rgb(250, 250, 250);">git checkout -b branch-name origin/branch-name</code><span style="color: rgb(102, 102, 102);">，本地和远程分支的名称最好一致；</span></div>
+<div><span style="color: rgb(102, 102, 102);">     建立本地分支和远程分支的关联，使用</span><code style="font-size: 12px; font-family: Consolas, monospace, serif; color: rgb(221, 0, 85); padding: 0px 4px; border: 1px solid rgb(221, 221, 221); border-radius: 3px; background: rgb(250, 250, 250);">git branch --set-upstream branch-name origin/branch-name</code><span style="color: rgb(102, 102, 102);">；</span></div>
+<div><span style="color: rgb(102, 102, 102);">     从远程抓取分支，使用</span><code style="font-size: 12px; font-family: Consolas, monospace, serif; color: rgb(221, 0, 85); padding: 0px 4px; border: 1px solid rgb(221, 221, 221); border-radius: 3px; background: rgb(250, 250, 250);">git pull</code><span style="color: rgb(102, 102, 102);">，如果有冲突，要先处理冲突。</span></div>
+<div><span style="color: rgb(102, 102, 102);">12、标签</span></div>
+<div><span style="color: rgb(102, 102, 102);">     命令</span><code style="font-size: 12px; font-family: Consolas, monospace, serif; color: rgb(221, 0, 85); padding: 0px 4px; border: 1px solid rgb(221, 221, 221); border-radius: 3px; background: rgb(250, 250, 250);">git tag &lt;name&gt;</code><span style="color: rgb(102, 102, 102);">用于新建一个标签，默认为</span><code style="font-size: 12px; font-family: Consolas, monospace, serif; color: rgb(221, 0, 85); padding: 0px 4px; border: 1px solid rgb(221, 221, 221); border-radius: 3px; background: rgb(250, 250, 250);">HEAD</code><span style="color: rgb(102, 102, 102);">，也可以指定一个commit id；</span></div>
+<div><code style="font-size: 12px; font-family: Consolas, monospace, serif; color: rgb(221, 0, 85); padding: 0px 4px; border: 1px solid rgb(221, 221, 221); border-radius: 3px; background: rgb(250, 250, 250);">git tag -a &lt;tagname&gt; -m &quot;blablabla...&quot;</code><span style="color: rgb(102, 102, 102);">可以指定标签信息；</span></div>
+<div><code style="font-size: 12px; font-family: Consolas, monospace, serif; color: rgb(221, 0, 85); padding: 0px 4px; border: 1px solid rgb(221, 221, 221); border-radius: 3px; background: rgb(250, 250, 250);">git tag -s &lt;tagname&gt; -m &quot;blablabla...&quot;</code><span style="color: rgb(102, 102, 102);">可以用PGP签名标签；</span></div>
+<div><span style="color: rgb(102, 102, 102);">命令</span><code style="font-size: 12px; font-family: Consolas, monospace, serif; color: rgb(221, 0, 85); padding: 0px 4px; border: 1px solid rgb(221, 221, 221); border-radius: 3px; background: rgb(250, 250, 250);">git tag</code><span style="color: rgb(102, 102, 102);">可以查看所有标签。</span></div>
+<div><span style="color: rgb(102, 102, 102);">13、删除标签</span></div>
+<div>
+<ul style="padding-left: 30px; color: rgb(102, 102, 102); font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+<li>
+<p style=" word-wrap: break-word; white-space: pre-wrap;">命令<code style="font-size: 12px; font-family: Consolas, monospace, serif; color: rgb(221, 0, 85); white-space: nowrap; padding: 0px 4px; border: 1px solid rgb(221, 221, 221); border-radius: 3px; background: rgb(250, 250, 250);">git push origin &lt;tagname&gt;</code>可以推送一个本地标签；</p>
+</li>
+<li>
+<p style=" word-wrap: break-word; white-space: pre-wrap;">命令<code style="font-size: 12px; font-family: Consolas, monospace, serif; color: rgb(221, 0, 85); white-space: nowrap; padding: 0px 4px; border: 1px solid rgb(221, 221, 221); border-radius: 3px; background: rgb(250, 250, 250);">git push origin --tags</code>可以推送全部未推送过的本地标签；</p>
+</li>
+<li>
+<p style=" word-wrap: break-word; white-space: pre-wrap;">命令<code style="font-size: 12px; font-family: Consolas, monospace, serif; color: rgb(221, 0, 85); white-space: nowrap; padding: 0px 4px; border: 1px solid rgb(221, 221, 221); border-radius: 3px; background: rgb(250, 250, 250);">git tag -d &lt;tagname&gt;</code>可以删除一个本地标签；</p>
+</li>
+<li>命令<code style="font-size: 12px; font-family: Consolas, monospace, serif; color: rgb(221, 0, 85); padding: 0px 4px; border: 1px solid rgb(221, 221, 221); border-radius: 3px; background: rgb(250, 250, 250);">git push origin :refs/tags/&lt;tagname&gt;</code>可以删除一个远程标签</li>
+</ul>
+</div>
+<div><span style="color: rgb(102, 102, 102);"><br/></span></div>
+<div><span style="color: rgb(102, 102, 102);">14、</span></div>
+</en-note>
+]]></content><created>20160815T080930Z</created><updated>20160815T095719Z</updated><note-attributes><author>593275402@qq.com</author><source>desktop.mac</source><reminder-order>0</reminder-order></note-attributes></note>
+</en-export>
