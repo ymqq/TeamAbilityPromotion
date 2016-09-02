@@ -65,7 +65,7 @@ Android官方培训课程中文版(v0.9.5): http://hukai.me/android-training-cou
 收集的Ando日的开源项目: http://www.open-open.com/lib/view/open1328063267889.html
 
 
-
+一种更清晰的Android架构：http://www.androidchina.net/2005.html
 
 ### iOS（金胜利、林利冰、吴子剑）
 

@@ -1,5 +1,98 @@
 # CQQ项目目录
 
+## 2016-09-02
+
+### 开始计划前
+
+#### 项目重构准备知识清单（计划用一周时间了解与熟悉清单内容，然后同步开始重构任务）
+Google MVP
+Google Guava
+Google Gson
+Retrofit(需要评估服务端接口是否支持) + OkHttp
+RxJava + RxAndroid + RxLifeCycle + RxBinding
+GreenDao
+Logger
+LeakCanary
+ACRA
+DBinspector
+Otto
+Stetho
+JUnit4
+Mockito
+Espresso
+重构工程最低支持Android4.4
+使用沉浸状态栏 + MD 界面设计模式
+列表相关控件统一使用RecyclerView实现，包括：ListView、GridView等
+使用ActionBar + 侧滑菜单
+splash
+
+
+## 2016-09-02
+Android架构初探：http://www.lightskystreet.com/2016/05/20/android-architecture/
+
+Android最佳实践：http://www.lightskystreet.com/categories/Android%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5/
+
+解读Android官方MVP项目单元测试：http://www.jianshu.com/p/cf446be43ae8
+
+图翼网：http://www.tuyiyi.com/
+
+史诗级规范！全新Apple iOS设计规范指南！：http://www.tuyiyi.com/v/45421.html
+
+## 2016-08-25
+
+Android知识结构：http://lib.csdn.net/base/android/structure
+
+### 测试驱动开发
+
+Android测试驱动开发(TDD)：http://blog.desmondyao.com/android-test/?utm_source=tuicool&utm_medium=referral
+
+世界级的Android测试开发流程（一）：http://blog.zhaiyifan.cn/2016/02/23/world-class-testing-development-pipeline-for-android-part-1/
+
+> 原文链接：http://blog.karumi.com/world-class-testing-development-pipeline-for-android/
+
+世界级的Android测试开发流程（二）：http://blog.zhaiyifan.cn/2016/02/23/world-class-testing-development-pipeline-for-android-part-2/
+
+> 原文链接：http://blog.karumi.com/world-class-testing-development-pipeline-for-android-part-2/
+
+## 2016-08-24
+
+HTML5来了，7个混合式移动开发框架：http://www.uml.org.cn/html/201608192.asp?utm_source=tuicool&utm_medium=referral
+
+## 2016-08-23
+
+[Android 之美] 那些你不知道的APK 瘦身，让你的APK更小：http://my.oschina.net/Silver2014/blog/735736
+
+强制开启android webview debug模式使用Chrome inspect：http://blog.csdn.net/zhulin2609/article/details/51437821
+
+### Android增量升级
+
+浅析android应用增量升级：http://blog.csdn.net/hmg25/article/details/8100896
+
+Android实现应用的增量更新\升级：http://blog.csdn.net/yyh352091626/article/details/50579859
+
+【Android增量升级系列_01】 浅谈Android增量更新客户端的实现方法：http://blog.csdn.net/duguang77/article/details/17676797
+
+AndFix使用说明：http://www.jianshu.com/p/479b8c7ec3e3
+
+各大热补丁方案分析和比较：http://blog.zhaiyifan.cn/2015/11/20/HotPatchCompare/
+
+
+#### 热补丁、增量升级/省流量更新
+
+##### 热补丁：
+
+> 修复代码bugs，使用classloader方式动态加载另外一个dex文件上的补丁代码，实现快速修复，只需要下载，不需要安装，app版本还是旧版本。
+
+> 完整版本还是要规定时间中，全量升级
+
+##### 增量升级/省流量更新：
+
+> 下载新版本大小远小于完整的新版本包，客户端下载完成增量包后，与本地当前包进行重新打包，变成与最新完整版一样的安装包，然后安装。
+
+> 每一次都相当于全量升级
+
+
+
 ## 2016-08-18
 
 ### 练手--重构项目之一：项目选择
