@@ -1,5 +1,15 @@
 # CQQ项目目录
 
+## 2016-09-06
+
+### 开始重构
+先用MVP完成界面逻辑开发，不考虑网络数据与本地缓存，纯粹的界面功能实现
+
+### 
+Android中RxJava+Retrofit2.0+MVP模式的整合：http://ms.csdn.net/geek/58733
+Dagger2的应用——MVP+Retrofit+RxJava：https://zhuanlan.zhihu.com/p/20479871
+
+
 ## 2016-09-02
 
 ### 开始计划前
